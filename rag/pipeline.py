@@ -15,7 +15,7 @@ def load_embedding_model(model_name):
     return embeddings
 
 
-def build_index(chunk_size, llm, embed_model, weaviate_client, index_name):
+def load_index(chunk_size, llm, embed_model, weaviate_client, index_name):
     service_context = ServiceContext.from_defaults(
         chunk_size=chunk_size,
         llm=llm,
@@ -44,8 +44,8 @@ def build_rag_pipeline():
     print("Loading embedding model...")
     embeddings = load_embedding_model(model_name=cfg.EMBEDDINGS)
 
-    print("Building index...")
-    index = build_index(cfg.CHUNK_SIZE, llm, embeddings, client, cfg.INDEX_NAME)
+    print("Loading index...")
+    index = load_index(cfg.CHUNK_SIZE, llm, embeddings, client, cfg.INDEX_NAME)
 
     print("Constructing query engine...")
     query_engine = index.as_query_engine(streaming=False)
