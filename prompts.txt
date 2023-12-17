@@ -78,3 +78,11 @@ Answer:
 This invoice is issued by Chapman, Kim and Green on 09/06/2012 to Rodriguez-Stevens. The total net worth of the items sold is $192.81, with a VAT rate of 10%. The gross worth of the items after adding VAT is $212.09. The items purchased include Wine Glasses Goblets Pair Clear Glass, With Hooks Stemware Storage Multiple Uses Iron Wine Rack Hanging Glass, Replacement Corkscrew Parts Spiral Worm Wine Opener Bottle Houdini, and HOME ESSENTIALS GRADIENT STEMLESS WINE GLASSES SET OF 4 20 FL OZ (591 ml) NEW.
 ==================================================
 Time to retrieve answer: 27.147464457899332
+
+
+python main.py "What's a Wine Glasses Goblets?"
+
+Answer:
+A Wine Glasses Goblets is a set of wine glasses with goblet-style bowls, designed for holding and drinking wine. These glasses typically have a large, round bowl that narrows towards the top, providing a generous surface area for swirling and sniffing the wine's aromas. They are often used for red wines, as their shape allows for better aeration of the wine, which can enhance its flavors and aromas.
+==================================================
+Time to retrieve answer: 21.826263291062787
